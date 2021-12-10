@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pairs</title>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <label for="rows_set">Количество рядов</label>
+            <input id="rows_set" type="range" max="6" min="2" value="2">
+            <input id="rows_out" type="text" readonly  value="2">
+        </div>
+        <div>
+            <label for="cols_set">Количество столбцов</label>
+            <input id="cols_set" type="range" max="6" min="2" value="2">
+            <input id="cols_out" type="text" readonly  value="2">
+        </div>
+        <div>
+            <label for="cards_out">Количество Карт</label>
+            <input id="cards_out" type="text" readonly  value="4">
+        </div>
+        <div>
+            <label for="timer_out">Таймер</label>
+            <input id="timer_out" type="text" readonly  value="90">
+        </div>
+        <div>
+           <button id="start_btn"></button> 
+           <button id="stop_btn" disabled></button> 
+        </div>
+               
+    </header>
+
+    <main>        
+        <table id="fieldCards"></table>
+        
+        <div id="win_window" class="hidden">
+            <img src="./images/bg-win.gif" alt="">
+            <button id="again_btn_1"></button>
+            <button id="cancel_btn_1"></button>
+        </div>
+        <div id="lose_window" class="hidden">
+            <img src="./images/bg-lose.png" alt="">
+            <button id="again_btn_2"></button>
+            <button id="cancel_btn_2"></button>
+        </div>                 
+    </main>
+
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
